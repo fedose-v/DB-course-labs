@@ -1,0 +1,23 @@
+.breadcrumbs-block {
+    padding: 4px 20px;
+    width: 800px;
+    margin: 0 auto 10px auto;
+    background-color: #dddddd;
+    height: 40px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 3px -1px #808080;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.breadcrumbs-content {
+    text-decoration: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: blue;
+}

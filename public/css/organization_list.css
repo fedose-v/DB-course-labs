@@ -1,0 +1,99 @@
+.create-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 2px;
+    width: 150px;
+    margin: 20px auto;
+    box-shadow: 0 2px 3px -1px #808080;
+}
+
+.create-container:hover {
+    box-shadow: 0 2px 3px 1px #808080;
+}
+
+.create-button {
+    font-size: 18px;
+    font-weight: 800;
+    font-style: italic;
+    color: #606060;
+}
+
+.create-button:hover {
+    color: green;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 2px 3px -1px #808080;
+}
+
+.container-main-info {
+    width: 650px;
+}
+
+.container:hover {
+    box-shadow: 0 2px 3px 1px #808080;
+}
+
+.metadata {
+    font-size: 18px;
+    font-weight: 800;
+    font-style: italic;
+    color: #606060;
+}
+
+.metadata:hover {
+    color: dodgerblue;
+}
+
+.remove-container {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-button {
+    font-size: 18px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.delete-button:hover {
+    color: red;
+}
+
+.edit-button {
+    font-size: 18px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.edit-button:hover {
+    color: orange;
+}
+
+.create-container.a, .create-container.a:hover, .create-container.a:visited, .create-container.a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container.a, .container.a:hover, .container.a:visited, .container.a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color: grey;
+    text-decoration-line: none;
+}

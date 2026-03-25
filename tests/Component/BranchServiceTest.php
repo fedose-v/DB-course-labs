@@ -24,10 +24,12 @@ class BranchServiceTest extends AbstractDatabaseTestCase
         $branch = $this->createTestBranch(null, 'Москва', 'ул.Арбат 89');
 
         $branchId = $this->branchService->add($branch);
+        
         $branchData = $this->branchService->find($branchId);
         $this->assertBranchData($branchData, $branchId, 'Москва', 'ул.Арбат 89');
 
         $this->branchService->save($this->createTestBranch($branchId, 'Йошкар-Ола', 'ул.Эшкинина 8Б'));
+        
         $branchData = $this->branchService->find($branchId);
         $this->assertBranchData($branchData, $branchId, 'Йошкар-Ола', 'ул.Эшкинина 8Б');
 
@@ -36,6 +38,7 @@ class BranchServiceTest extends AbstractDatabaseTestCase
         $this->assertBranchData($branchList[0], $branchId, 'Йошкар-Ола', 'ул.Эшкинина 8Б');
 
         $this->branchService->delete($branchId);
+        
         $branchData = $this->branchService->find($branchId);
         $this->assertNull($branchData);
     }

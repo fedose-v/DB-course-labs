@@ -25,7 +25,7 @@ class OrganizationControllerTest extends AbstractFunctionalTestCase
         $this->assertStatusCode(200, $response);
 
         $this->sendGetRequest(
-            '/branch/edit',
+            '/branch/list',
             []
         );
 
